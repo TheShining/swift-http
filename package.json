@@ -1,7 +1,7 @@
 {
   "name": "swift-http",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.3",
+  "description": "Promise HTTP client for the browser using Typescript",
   "keywords": [],
   "main": "dist/swift-http.umd.js",
   "module": "dist/swift-http.es5.js",
@@ -12,7 +12,7 @@
   "author": "liang <liangliang0311@live.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/TheShining/swift-http"
   },
   "license": "MIT",
   "engines": {
@@ -115,6 +115,6 @@
     "tslint-config-prettier": "^1.15.0",
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.12.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.8.3"
   }
 }
