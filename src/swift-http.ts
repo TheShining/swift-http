@@ -1,6 +1,7 @@
 import { RequestConfig } from './types'
 import { request } from './request'
 import { Url } from './common/url'
+import { Data } from './common/data'
 
 function swiftHttp(config: RequestConfig) {
   preConfig(config)
@@ -17,6 +18,7 @@ function preConfig(config: RequestConfig): void {
   let processUrl = new Url(url)
 
   config.url = processUrl.get(params)
+  config.data = Data.tansformRequest(data)
 }
 
 export default swiftHttp
