@@ -15,6 +15,7 @@ type Method =
 export interface RequestConfig {
   url: string
   method: Method
+  headers: object
   data?: any
-  params?: any
+  params?: object
 }
