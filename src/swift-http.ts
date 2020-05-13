@@ -6,7 +6,10 @@ import { Headers } from './common/headers'
 
 function swiftHttp(config: RequestConfig): swiftHttpPromise {
   preConfig(config)
-  return request(config)
+  return request(config).then(res => {
+    res.data = Data.tansformResponse(res.data)
+    return res
+  })
 }
 
 /**
