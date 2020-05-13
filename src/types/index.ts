@@ -15,7 +15,19 @@ type Method =
 export interface RequestConfig {
   url: string
   method: Method
-  headers: object
+  headers?: object
   data?: any
   params?: object
+  responseType?: XMLHttpRequestResponseType
 }
+
+export interface Response {
+  data: any
+  status: number
+  statusText: string
+  headers: any
+  config: RequestConfig
+  xhr: any
+}
+
+export interface swiftHttpPromise extends Promise<Response> {}

@@ -1,12 +1,12 @@
-import { RequestConfig } from './types'
+import { RequestConfig, swiftHttpPromise } from './types'
 import { request } from './request'
 import { Url } from './common/url'
 import { Data } from './common/data'
 import { Headers } from './common/headers'
 
-function swiftHttp(config: RequestConfig) {
+function swiftHttp(config: RequestConfig): swiftHttpPromise {
   preConfig(config)
-  request(config)
+  return request(config)
 }
 
 /**

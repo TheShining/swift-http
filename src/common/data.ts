@@ -11,4 +11,15 @@ export class Data {
     }
     return data
   }
+
+  public static tansformResponse(data: any): any {
+    if (typeof data === 'string') {
+      try {
+        JSON.parse(data)
+      } catch (error) {
+        //
+      }
+    }
+    return data
+  }
 }

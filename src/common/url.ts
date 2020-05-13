@@ -11,8 +11,8 @@ export class Url {
    * get方法参数拼接
    * @param params 参数
    */
-  public get(params: object = {}): string {
-    if (!params) return ''
+  public get(params?: object): string {
+    if (!params) return this.url
     if (!Utils.isObject(params)) {
       throw 'The params expectation is an object'
     }
