@@ -15,7 +15,7 @@ export class Data {
   public static tansformResponse(data: any): any {
     if (typeof data === 'string') {
       try {
-        JSON.parse(data)
+        data = JSON.parse(data)
       } catch (error) {
         //
       }
