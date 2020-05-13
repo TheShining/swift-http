@@ -1,6 +1,6 @@
 {
   "name": "swift-http",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Promise HTTP client for the browser using Typescript",
   "keywords": [],
   "main": "dist/swift-http.umd.js",
